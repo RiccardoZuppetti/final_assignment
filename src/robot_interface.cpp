@@ -107,7 +107,7 @@ void positionCallback(const Odometry:: Ptr& x){
         if(count%500==0)
             ROS_INFO("Distances: %f \t %f", distance_along_x,distance_along_y);
         // check if the random target is reached by the robot
-        if((distance_along_x>=-1 && distance_along_x<=1) && (distance_along_y>=-1 && distance_along_y<=1)){
+        if((distance_along_x>=-1.0 && distance_along_x<=1.0) && (distance_along_y>=-1.0 && distance_along_y<=1.0)){
             prev_state=4; // go to stop state
             init=1; // ready to execute a new action
             ROS_INFO("Random position reached!");
@@ -165,7 +165,7 @@ void positionCallback(const Odometry:: Ptr& x){
         if(count%500==0)
             ROS_INFO("Distances: %f \t %f", distance_along_x,distance_along_y);
         // check if the random target is reached by the robot
-        if((distance_along_x>=-1 && distance_along_x<=1) && (distance_along_y>=-1 && distance_along_y<=1)){
+        if((distance_along_x>=-1.0 && distance_along_x<=1.0) && (distance_along_y>=-1.0 && distance_along_y<=1.0)){
             prev_state=4; // go to stop state
             init=1; // ready to execute a new action
             ROS_INFO("Selected position reached!");
