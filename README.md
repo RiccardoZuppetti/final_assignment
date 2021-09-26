@@ -71,11 +71,7 @@ If, instead, 'init' is equal to 0, the function stop is called and all velocitie
 1. Open a shell and install the required packages
 ```
 sudo apt-get install ros-noetic-openslam-gmapping
-```
-```
 sudo apt-get install ros-noetic-navigation
-```
-```
 sudo apt-get install ros-noetic-move-base
 ```
 2. Move to your catkin_ws/src folder and install the 'slam-gmapping' package
