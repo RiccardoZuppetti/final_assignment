@@ -12,7 +12,8 @@ The robot is controlled by command line interface by the user.
 In other words, the user can remotely control the robot.
 According to this aspect, the user can choose which action, among the implemented ones, the robot should perform.
 The actions that can be given to the robot are:
-1. move to a pseudo-random target, i.e. moving towards one of following target positions [(-4,-3);(-4,2);(-4,7);(5,-7);(5,-3);(5,1)]
+1. move to a pseudo-random target, i.e. moving towards one of following target positions:
+  {(-4,-3);(-4,2);(-4,7);(5,-7);(5,-3);(5,1)}
 2. reach a specific target entered by the user, after checking that it is one of the above six targets
 3. follow the wall within the environment
 4. stop in the last position reached by the robot
